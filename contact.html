@@ -1,0 +1,66 @@
+<!DOCTYPE HTML>
+<html lang="ar">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>تواصل معي</title>
+    <meta name="description" content="الموقع الرسمي لـ مطور الويب عمر ماهر">
+
+    <link rel="stylesheet" href="contact-style.css">
+    <link rel="stylesheet" href="menu-button.css">
+
+</head>
+<body>
+    <div class="menu-btn" onclick="toggleMenu()">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+    <div class="sidebar">
+        <button class="close-btn">&times;</button>
+        <h1>المطور| عمر ماهر</h1>
+        <br><a href="index.html">الصفحه الرئيسيه</a>
+        <a href="about.html"> اعرف المزيد عني</a>
+        <a href="projects.html"> أعمالي و مشاريعي</a>
+        <a href="contact.html"> تواصل معي</a>
+    </div>
+
+
+    <div class="header">
+        <h1>تواصل معي</h1>
+    </div>
+
+
+    <div class="main-content">
+        <div class="note">
+            <p>
+                املأ النموذج التالي و عندما استلم رسالتك سأقوم بالتواصل معك عن طريق تطبيق واتساب، تأكد ان الرقم الذي سيتم إدخاله رقم صحيح و مُفعل على واتساب.
+            </p>
+        </div>
+
+
+        <form id="contact-me">
+            <label for="FullName"> اسمك الكامل:</label>
+            <input type="text" id="FullName" name="FullName" placeholder="اكتب اسمك هنا" required><br><br>
+
+            <label for="Phone">رقم هاتفك:</label>
+            <input type="number" id="Phone" name="Phone" placeholder="اكتب رقمك هنا" required><br><br>
+
+            <label for="Message"> اكتب رسالتك:</label>
+            <textarea id="Message" name="Message" placeholder="اكتب رسالتك هنا" required></textarea><br><br>
+
+            <button class="confirm-btn" id="submit-btn"> إرسال </button>
+
+            <div id="response-message" style="display: none;"></div>
+        </form>
+    </div>
+
+
+    <footer>
+        &copy; 2024 جميع الحقوق محفوظه - المطور عمر ماهر
+    </footer>
+
+</body>
+<script src="form-load.js"></script>
+<script src="menu-button.js"></script>
+</html>

@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background: black;
+    direction: rtl;
+}
+
+.header {
+    background: #282828;
+    color: #fff;
+    width: 100%;
+    padding: 8px;
+    text-align: center;
+    border-radius: 30px;
+    margin-top: 10px;
+}
+
+.main-content {
+    padding-top: 50px;
+    color: white;
+    margin: 10px;
+}
+
+.main-content h2 {
+    color: #b8860b;
+    border-bottom: 5px solid #b8860b;
+    margin: 15px;
+    opacity: 0;
+    animation: slideInFromSide 0.8s ease-in-out forwards;
+    animation-delay: 0.3s;
+}
+
+.main-content p {
+    color: white;
+    margin: 10px;
+    opacity: 0;
+    animation: fadeIn 0.8s ease-in-out forwards;
+    animation-delay: 0.5s;
+}
+
+.begin, .work, .hope, .tools, .jorney {
+    padding-bottom: 80px;
+}
+
+footer {
+    color: grey;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideInFromSide {
+    from {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}

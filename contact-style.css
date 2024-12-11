@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background: black;
+    direction: rtl;
+}
+
+.header {
+    background: #282828;
+    color: #fff;
+    width: 100%;
+    padding: 8px;
+    text-align: center;
+    border-radius: 30px;
+    margin-top: 10px;
+}
+
+.main-content {
+    color: #b8860b;
+    padding-top: 50px;
+    margin: 15px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background: #202020;
+    padding: 20px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 500px;
+    margin: auto;
+    margin-bottom: 80px;
+    opacity: 0;
+    animation: fadeIn 0.8s ease-in-out forwards;
+    animation-delay: 0.5s;
+}
+
+form label {
+    color: #b8860b;
+    margin-bottom: 5px;
+    font-weight: bold;
+    opacity: 0;
+    animation: fadeIn 0.8s ease-in-out forwards;
+    animation-delay: 0.5s;
+}
+
+form input, form button {
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    opacity: 0;
+    animation: fadeIn 0.8s ease-in-out forwards;
+    animation-delay: 0.5s;
+}
+
+form input {
+    background: #282828;
+    color: #fff;
+    opacity: 0;
+    animation: fadeIn 0.8s ease-in-out forwards;
+    animation-delay: 0.5s;
+}
+
+form button {
+    background: #b8860b;
+    color: #fff;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s;
+    opacity: 0;
+    animation: fadeIn 0.8s ease-in-out forwards;
+    animation-delay: 0.5s;
+}
+
+form button:hover {
+    background: #d4a017;
+}
+
+form textarea#Message {
+    width: 100%;
+    height: 150px;
+    background: #282828;
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 1rem;
+    opacity: 0;
+    animation: fadeIn 0.8s ease-in-out forwards;
+    animation-delay: 0.5s;
+}
+
+form textarea:focus {
+    outline: none;
+    border: 2px solid #b8860b;
+}
+
+form input:focus, form button:focus {
+    outline: none;
+    border: 2px solid #b8860b;
+}
+
+.main-content p {
+    color: white;
+    margin: 10px;
+    opacity: 0;
+    animation: fadeIn 0.8s ease-in-out forwards;
+    animation-delay: 0.5s;
+}
+
+.note {
+    padding-bottom: 80px;
+}
+
+footer {
+    color: grey;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
