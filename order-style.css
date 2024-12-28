@@ -53,7 +53,7 @@ form label {
     animation-delay: 0.5s;
 }
 
-form input, form button {
+form input, form select, form button {
     width: 100%;
     margin-bottom: 15px;
     padding: 10px;
@@ -66,6 +66,14 @@ form input, form button {
 }
 
 form input {
+    background: #282828;
+    color: #fff;
+    opacity: 0;
+    animation: fadeIn 0.8s ease-in-out forwards;
+    animation-delay: 0.5s;
+}
+
+form select {
     background: #282828;
     color: #fff;
     opacity: 0;
@@ -106,7 +114,7 @@ form textarea:focus {
     border: 2px solid #b8860b;
 }
 
-form input:focus, form button:focus {
+form input:focus, form select:focus, form button:focus {
     outline: none;
     border: 2px solid #b8860b;
 }
@@ -136,4 +144,4 @@ footer {
     to {
         opacity: 1;
     }
-}
+    }
