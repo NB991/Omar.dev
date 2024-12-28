@@ -3,10 +3,10 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
-    <title>تواصل معي</title>
+    <title>اطلب مشروع</title>
     <meta name="description" content="الموقع الرسمي لـ مطور الويب عمر ماهر">
-
-    <link rel="stylesheet" href="contact-style.css">
+    <link rel="icon" type="image/png" href="https://nb991.github.io/Omar.dev/Icon_photo.png">
+    <link rel="stylesheet" href="order-style.css">
     <link rel="stylesheet" href="menu-button.css">
 
 </head>
@@ -22,12 +22,12 @@
         <br><a href="index.html">الصفحه الرئيسيه</a>
         <a href="about.html"> اعرف المزيد عني</a>
         <a href="projects.html"> أعمالي و مشاريعي</a>
-        <a href="contact.html"> تواصل معي</a>
+        <a href="order.html"> اطلب مشروع</a>
     </div>
 
 
     <div class="header">
-        <h1>تواصل معي</h1>
+        <h1>اطلب مشروع</h1>
     </div>
 
 
@@ -46,10 +46,20 @@
             <label for="Phone">رقم هاتفك:</label>
             <input type="number" id="Phone" name="Phone" placeholder="اكتب رقمك هنا" required><br><br>
 
-            <label for="Message"> اكتب رسالتك:</label>
-            <textarea id="Message" name="Message" placeholder="اكتب رسالتك هنا" required></textarea><br><br>
+            <label for="type"> نوع المشروع:  </label>
+            <select id="type" name="type" required>
+                <option value="" selected disabled> اختر من القائمه</option>
+                <option value="Website"> موقع ويب </option>
+                <option value="Platform">منصه متكامله</option>
+                <option value="WebGame"> لعبة ويب بسيطه </option>
+                <option value="App">تطبيق اندرويد </option>
+                <option value="Bot"> بوت متطور </option>
+            </select><br><br>
 
-            <button class="confirm-btn" id="submit-btn"> إرسال </button>
+            <label for="Message"> تفاصيل المشروع:</label>
+            <textarea id="Message" name="Message" placeholder="اكتب التفاصيل هنا" required></textarea><br><br>
+
+            <button class="confirm-btn" id="submit-btn"> تأكيد </button>
 
             <div id="response-message" style="display: none;"></div>
         </form>
@@ -63,4 +73,4 @@
 </body>
 <script src="form-load.js"></script>
 <script src="menu-button.js"></script>
-</html>
+                </html>
