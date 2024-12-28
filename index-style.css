@@ -95,6 +95,16 @@ html, body {
     transition: transform 0.5s;
 }
 
+.links a {
+    color: cyan;
+    text-decoration: underline;
+}
+
+.links a:hover {
+    color: blue;
+    text-decoration: underline;
+}
+
 .projects a {
     color: #d4af37;
     border: 1px solid #d4af37;
@@ -130,7 +140,7 @@ html, body {
     animation-delay: 0.5s;
 }
 
-.about, .experiense, .projects, .blog {
+.about, .experiense, .projects, .links, .blog {
     padding-bottom: 80px;
 }
 
@@ -158,4 +168,4 @@ footer {
         opacity: 1;
         transform: translateX(0);
     }
-}
+        }
