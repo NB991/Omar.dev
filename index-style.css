@@ -121,27 +121,59 @@ html, body {
 }
 
 .img1 {
-    width: 300px;
+    width: 100%;
     height: 200px;
     border-radius: 10px;
+    perspective: 1000px;
 }
 
 .img1:hover {
-    transform: scale(1.1);
+    transform: rotateY(40deg);
     transition: transform 0.5s;
+    transform-style: preserve-3d;
 }
 
 .blog ul {
-    margin: 15px;
-    padding-top: 20px;
-    color: white;
-    opacity: 0;
-    animation: fadeIn 0.8s ease-in-out forwards;
-    animation-delay: 0.5s;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: hidden;
+    padding: 0;
+    list-style: none;
+    margin: 0 auto;
+    max-width: 600px;
 }
 
-.about, .experiense, .projects, .links, .blog {
-    padding-bottom: 80px;
+.blog li {
+    flex: 0 0 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    scroll-snap-align: start;
+}
+
+.blog li span {
+    font-size: 25px;
+    color: grey;
+}
+
+.dots {
+    text-align: center;
+    font-size: 40px;
+    color: orange;
+    margin: 0;
+}
+
+.scroll p {
+    text-align: center; 
+}
+
+.scroll img {
+    width: 60px;
+    filter: invert(0.8) sepia(0.1) saturate(0.3) brightness(0.8); 
+    margin: 5px;
+}
+
+.about, .experiense, .projects, .coming, .links, .blog {
+    padding-bottom: 90px;
 }
 
 footer {
